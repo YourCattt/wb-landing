@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WB Новая эра – Курс по продажам на Wildberries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #6a0dad;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #6a0dad;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #5a0b9a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WB Новая эра</h1>
+        <h2>Освой продажи на Wildberries и зарабатывай от 100 000 ₽ в месяц</h2>
+        <p>Полный курс для новичков и опытных продавцов. Практические кейсы, стратегии, работающие схемы.</p>
+        <a href="#signup" class="cta-button">Записаться на курс</a>
+    </div>
+</body>
+</html>
