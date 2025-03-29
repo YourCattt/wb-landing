@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://cdn.pixabay.com/photo/2017/08/01/00/16/people-2569234_1280.jpg') no-repeat center center/cover;
+            background: url('https://cdn.pixabay.com/photo/2016/11/21/15/53/money-1841684_1280.jpg') no-repeat center center/cover;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -21,18 +21,18 @@
         .money {
             position: absolute;
             top: -50px;
-            left: calc(10% + 80% * var(--rand));
-            width: 50px;
+            left: calc(5% + 90% * var(--rand));
+            width: 40px;
             height: auto;
             animation: fall linear infinite;
-            animation-duration: calc(2s + 3s * var(--rand));
+            animation-duration: calc(3s + 2s * var(--rand));
         }
         .container {
             max-width: 800px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.9);
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.95);
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             position: relative;
             z-index: 2;
@@ -44,14 +44,20 @@
             display: inline-block;
             padding: 15px 30px;
             margin-top: 20px;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/7/79/100_dollar_bill.jpg') no-repeat center center/cover;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/56/US_$100_Series_2009_Obverse.jpg') no-repeat center center/cover;
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 8px;
             border: 2px solid #000;
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 60px;
+            margin: 20px auto;
         }
         .cta-button:hover {
             filter: brightness(1.2);
@@ -73,9 +79,10 @@
             money.classList.add('money');
             money.style.setProperty('--rand', Math.random());
             document.body.appendChild(money);
-            setTimeout(() => money.remove(), 5000);
+            setTimeout(() => money.remove(), 7000);
         }
-        setInterval(createMoney, 300);
+        setInterval(createMoney, 500);
     </script>
 </body>
 </html>
+
